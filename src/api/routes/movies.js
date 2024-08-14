@@ -1,3 +1,5 @@
+const { getMovies, postMovie, updateMovie, deleteMovie } = require("../controllers/movie");
+
 //vamos a crear un enrutado, utilizando express:
 const moviesRouter = require("express").Router();
 

@@ -30,6 +30,7 @@ const postMovie = async (req, res, next) => {
     //Devolvemos los datos que acabamos de guardar - usando el status 201, que es el que se usa para guardar:
     return res.status(201).json(movieSaved);
   } catch (error) {
+    console.log(error);
     return res.status(400).json("error"); //esto es un error muy genérico
   }
 }
